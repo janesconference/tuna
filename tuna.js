@@ -112,6 +112,7 @@
                             } else {
                                 method = linear;
                                 param.cancelScheduledValues(start);
+                                console.log ("param", param, "automated at time", start);
                                 param.setValueAtTime(param.value, start);
                             }
                             param[method](value, dur + start);
